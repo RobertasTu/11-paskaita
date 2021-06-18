@@ -9,9 +9,12 @@
     <style>
         html {
             font-size: 18px;
+            /* height: 100%; */
         }
     
     body {
+      
+        /* min-height: 100%; */
         max-width: 1920px;
         background-color: #657AD3;
         font: normal normal normal 0.7222rem/0.8333rem Gill Sans MT;
@@ -20,6 +23,7 @@
 
     .container {
         width: 42.05%;
+        /* margin: 0 auto; */
          /* background-color:white; */
         position: absolute;
         top: 50%;
@@ -29,7 +33,7 @@
 
     .left-column, .right-column {
         float: left;
-        height: 26.6667rem;
+        height: 26.8889rem;
 
     }
 
@@ -45,17 +49,15 @@
     }
 
     .left-column-container {
-        
         margin-top: 1.6667rem;
         height: 23.5556rem;
         background-color: white;
         background-size: cover;
         padding-left: 2.2222rem;
         background: transparent url('img/mountain.png.png') 0% 0% no-repeat padding-box;
-        padding-top: 1.7778rem;
-        float: right;
-
-
+        /* padding-top: 1.7778rem; */
+        /* float: right; */
+        position: relative;
     }
 
 h1 {
@@ -64,9 +66,10 @@ h1 {
     margin: 0;
     padding-top: 32px;
 }
+
 .links {
-    position: relative;
-    
+    position: absolute;
+    bottom: 1.3889rem;   
 }
 
 .links a, .links p {
@@ -96,7 +99,7 @@ input {
     padding-left: 0;
 
 }
-inpu:focus {
+input:focus {
     border: none;
     outline: none;
     border-bottom: 1px solid #808080;
@@ -126,7 +129,7 @@ label {
     color: #000000;
     position: absolute;
     top: 0.7778rem;
-    right: 1.2222rem;
+    right: 1.2778rem;
 }
 
 .close:hover {
@@ -157,11 +160,15 @@ label {
 }
 
 .right-column-bottom-action p {
-    padding-left: 14px;
+    padding-left: 0.7778rem;
     margin: 0;
-    font: normal normal normal 18px/21px Gill Sans MT;
-
+    font: normal normal normal 1rem/1.1667rem Gill Sans MT;
 }
+.right-column-bottom-action a {
+            padding-left: 1.3333rem;
+            font: normal normal normal 1rem/1.1667rem Gill Sans MT;
+            color:#00008B;
+        }
 
 .right-column-bottom-action a:hover {
     color:grey;
@@ -203,17 +210,17 @@ label {
                     <input placeholder="Enter your username" type='text' id='username' name='username' />
                 </div>
                 <div class='input'>
-                    <label for='Username'>E-mail</label>
-                    <input placeholder="E-mail" type='text' id='username' name='E-mail' />
+                    <label for='email'>E-mail</label>
+                    <input placeholder="E-mail" type='text' id='email' name='E-mail' />
 
                 </div>
                 <div class='input'>
                     <label for='password'>Password</label>
-                    <input placeholder="Enter your password" type='password' id='username' name='Password' />
+                    <input placeholder="Enter your password" type='password' id='password' name='Password' />
                 </div>
                 <div class='input'>
                     <label for='repeat-password'>Repeat password</label>
-                    <input placeholder="Enter your password" type='password' id='username' name='repeat-password' />
+                    <input placeholder="Enter your password" type='password' id='repeat-password' name='repeat-password' />
                 </div>
                 
                     <div class='right-column-bottom-action'>
